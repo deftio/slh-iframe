@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- hack demo from Manu -->
+<head>
+  <meta charset="UTF-8">
+  <title>Second Look Demo</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background-color: #121212; /* dark background */
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      overflow: hidden; /* prevent scrolling */
+    }
+
+    header {
+      padding: 1rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-align: left;
+      background-color: #1e1e1e;
+      border-bottom: 1px solid #333;
+    }
+
+    iframe {
+      flex: 1;
+      border: none;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    XH Patient Explorer
+  </header>
+  <iframe src="https://app.secondlookhealth.ai/v1/medical-cases?brand=new_brand_name"></iframe> <!-- note param to change brand from Second Look to somthing else -->
+</body>
+</html>
